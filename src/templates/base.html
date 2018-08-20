@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+	<title>Cobee KWON</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				&nbsp;
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<ul class="col flex-column">
+					{% load static %}
+					<img src="{% static 'my_photo.jpeg' %}" style="width:100%;height:100%;">
+				</ul>
+				<ul class="col flex-column">
+					<h4 style="text-align: center;" onmouseover="this.innerHTML"='권순탑' onmouseout="this.innerHTML"='cobee'>Cobee</h4>
+					<h5 style="text-align: center;">(SunTop Kwon)</h5>
+				</ul>
+				<ul class="nav flex-column" style="text-align: center;">
+					<li class="nav-item">
+						<a class="nav-link active" href="{% url 'home' %}">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="{% url 'about' %}">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="{% url 'skills' %}">SKILLS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">EXPERIENCE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">WORK</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">BLOG</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="{% url 'contact' %}">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col">
+				{% block content %}
+
+				{% endblock %}
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>
