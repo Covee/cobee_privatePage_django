@@ -3,7 +3,8 @@ import os
 import sys
 
 if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cobee_profile.settings')
+    # settings파일을 분리하고 나면 이 파일의 project_name.settings 뒤에 새로운 경로를 추가로 작성 해 주어야 함.
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cobee_profile.settings.base')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cobee_profile.settings')
+
+# settings파일을 분리하고 나면 이 파일의 project_name.settings 뒤에 새로운 경로를 추가로 작성 해 주어야 함.
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cobee_profile.settings.base')
 
 application = get_wsgi_application()
