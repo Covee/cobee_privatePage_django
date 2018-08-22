@@ -7,4 +7,4 @@ DEBUG = False
 ALLOWED_HOSTS = config_secret_deploy['django']['allowed_hosts']
 
 # WSGI application
-WSGI_APPLICATION = 'config.wsgi.deploy.application'
+WSGI_APPLICATION = 'cobee_profile.wsgi.deploy.application'
