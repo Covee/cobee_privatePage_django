@@ -25,7 +25,7 @@ SECRET_KEY = config_secret_common['django']['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','ec2-52-79-192-64.ap-northeast-2.compute.amazonaws.com','13.209.69.15', '172.31.23.89']
+ALLOWED_HOSTS = ['localhost','ec2-54-180-82-115.ap-northeast-2.compute.amazonaws.com','13.209.69.15', '172.31.23.89']
 
 
 # Application definition
