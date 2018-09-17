@@ -23,9 +23,9 @@ SECRET_KEY = config_secret_common['django']['SECRET_KEY']
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['ec2-13-209-69-15.ap-northeast-2.compute.amazonaws.com']
 
 
 # Application definition
