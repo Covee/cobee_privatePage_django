@@ -30,7 +30,9 @@ ALLOWED_HOSTS = [
                 'ec2-54-180-72-185.ap-northeast-2.compute.amazonaws.com',
                 '13.209.69.15',
                 '172.31.23.89',
-                '54.180.72.185'
+                '54.180.72.185',
+                'cobee.space',
+                'www.cobee.space',
                 ]
 
 
